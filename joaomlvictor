@@ -23,3 +23,18 @@ Licença de software livre - "licença CollabNet/Tigris.org ao estilo Apache"
 Versão 1.6: (lançada em 20 de março de 2009)
 Melhorias no svn merge
 Correção de vários bugs
+
+Manipulação consistente de dados
+O Subversion exprime as diferenças de arquivo usando um algoritmo diferenciado, o qual funciona de maneira idêntica tanto 
+em arquivos texto (compreensível para humanos) quanto em arquivos binários (incompreensível para humanos). Ambos os tipos 
+de arquivos são igualmente armazenados de forma compactada no repositório, e as diferenças são enviadas em ambas as 
+direções pela rede.
+
+Ramificações e rotulagem eficiente
+O custo de se fazer ramificações (branching) e de rotulagem (tagging) não precisa ser proporcional ao tamanho do projeto. 
+O Subversion cria ramos e rótulos simplesmente copiando o projeto, usando um mecanismo semelhante a um hard-link. Assim 
+essas operações levam apenas uma pequena e constante quantidade de tempo.
+
+Hackability
+O Subversion não tem qualquer bagagem histórica; ele é implementado como um conjunto de bibliotecas C compartilhadas 
+com APIs bem definidas. Isto torna o Subversion extremamente manutenível e usável por outras aplicações e linguagens.
