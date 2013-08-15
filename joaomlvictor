@@ -1,0 +1,25 @@
+ Apache Subversion (também conhecido por svn) é um sistema de controle de versão desenhado especificamente para 
+ ser um substituto moderno do CVS, 
+ 
+ Versão 1.1 (lançada em 20 de Setembro de 2004):
+mensagens internacionalizadas do programa
+versionamento de atalhos simbólicos
+um novo formato de repositório, FSFS, que não usa um "back-end" de base de dados, guardando as revisões em ficheiros no
+sistema de ficheiros.
+A versão 1.0 do Subversion (lançada em 23 de Fevereiro de 2004) possui as seguintes características:
+As características mais correntes do CVS
+São guardadas versões de directorias, mudanças de nome e meta-dados de ficheiros
+As operações de "commit" são verdadeiramente atómicas
+Servidor HTTP Apache como servidor de rede, WebDAV/DeltaV como protocolo 
+(também existe um processo independente de servidor que usa um protocolo personalizado sobre TCP/IP)
+A ramificação e a etiquetagem são operações "baratas" (em tempo constante)
+Desenho nativo de arquitectura cliente-servidor e de "biblioteca em camadas"
+O protocolo cliente-servidor envia diffs em ambas as direcções
+Os custos são proporcionais ao tamanho das mudanças e não ao tamanho dos dados
+Tratamento eficiente de ficheiros binários.
+Saída de informação passível de ser analisada gramaticalmente (incluindo a saída de registos em formato XML)
+Licença de software livre - "licença CollabNet/Tigris.org ao estilo Apache"
+
+Versão 1.6: (lançada em 20 de março de 2009)
+Melhorias no svn merge
+Correção de vários bugs
