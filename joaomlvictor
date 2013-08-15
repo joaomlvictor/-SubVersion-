@@ -23,3 +23,21 @@ Licença de software livre - "licença CollabNet/Tigris.org ao estilo Apache"
 Versão 1.6: (lançada em 20 de março de 2009)
 Melhorias no svn merge
 Correção de vários bugs
+
+Commits atômicos
+Um conjunto de modificações ou é inteiramente registrado no repositório, ou não é registrado de forma nenhuma. 
+Isto possibilita aos desenvolvedores criarem e registrarem alterações como blocos lógicos, e também evita problemas que 
+possam ocorrer quando apenas uma parte de um conjunto de alterações seja enviada com sucesso ao repositório.
+
+Versionamento de metadados
+Cada arquivo e diretório tem um conjunto de propriedades—chaves e seus valores—associados consigo. Você pode criar e 
+armazenar quaisquer pares chave/valor que quiser. As propriedades são versionadas ao longo do tempo, tal como os conteúdos
+de arquivo.
+
+Escolha das camadas de rede
+O Subversion tem uma noção abstrata do acesso ao repositório, tornando-o mais fácil para as pessoas implementarem novos 
+mecanismos de rede. O Subversion pode se associar ao servidor Apache HTTP como um módulo de extensão. Isto dá a
+o Subversion uma grande vantagem em estabilidade e interoperabilidade, além de acesso instantâneo aos recursos 
+existentes oferecidos por este servidor—autenticação, autorização, compactação online, dentre outros. Um servidor 
+Subversion mais leve e independente também está disponível. Este servidor utiliza um protocolo específico o qual 
+pode ser facilmente ser tunelado sobre SSH.
