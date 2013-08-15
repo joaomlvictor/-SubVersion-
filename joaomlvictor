@@ -23,3 +23,26 @@ Licença de software livre - "licença CollabNet/Tigris.org ao estilo Apache"
 Versão 1.6: (lançada em 20 de março de 2009)
 Melhorias no svn merge
 Correção de vários bugs
+
+
+Ao discutir sobre que recursos o Subversion traz para o âmbito do controle de versão, frequentemente é útil falar deles 
+em termos de que avanços eles representam aos recursos do CVS. Se você não está familiarizado com o CVS, você pode não 
+compreender todas essas características. E se você não estiver familiarizado com controle de versão como um todo, 
+você pode ficar bem confuso a menos que você leia antes Capítulo 1, Conceitos Fundamentais, onde apresentamos uma 
+suave introdução ao controle de versão.
+
+O Subversion proporciona:
+
+Versionamento de diretórios
+O CVS apenas rastreia o histórico de arquivos individuais, já o Subversion implementa um sistema de arquivos “virtual” 
+sob controle de versão que rastreia modificações a toda a árvore de diretório ao longo do tempo. Os arquivos e os 
+diretórios são versionados.
+
+Histórico de versões efetivo
+Como o CVS é limitado apenas ao versionamento de arquivos, operações como cópia e renomeação—que podem ocorrer com 
+arquivos também, mas que são realmente alterações no conteúdo de algum diretório continente—não são suportadas no CVS. 
+Adicionalmente, no CVS você não pode substituir um arquivo versionado por alguma outra coisa com o mesmo nome sem que 
+o novo item deixe de herdar o histórico do arquivo antigo—que talvez seja até algo com o qual não mantenha nenhuma 
+correlação. Com o Subversion, você pode adicionar, excluir, copiar, e renomear ambos os arquivos ou diretórios. 
+E cada novo arquivo adicionado começa com um histórico próprio e completamente novo.
+
