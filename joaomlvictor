@@ -25,8 +25,10 @@ Melhorias no svn merge
 Correção de vários bugs
 
 Manipulação consistente de dados
-O Subversion exprime as diferenças de arquivo usando um algoritmo diferenciado, o qual funciona de maneira idêntica tanto 
-em arquivos texto (compreensível para humanos) quanto em arquivos binários (incompreensível para humanos). Ambos os tipos 
+O Subversion exprime as diferenças de arquivo usando um algoritmo diferenciado, o qual funciona de maneira idêntica 
+tanto 
+em arquivos texto (compreensível para humanos) quanto em arquivos binários (incompreensível para humanos). 
+Ambos os tipos 
 de arquivos são igualmente armazenados de forma compactada no repositório, e as diferenças são enviadas em ambas as 
 direções pela rede.
 
@@ -38,3 +40,37 @@ essas operações levam apenas uma pequena e constante quantidade de tempo.
 Hackability
 O Subversion não tem qualquer bagagem histórica; ele é implementado como um conjunto de bibliotecas C compartilhadas 
 com APIs bem definidas. Isto torna o Subversion extremamente manutenível e usável por outras aplicações e linguagens.
+
+Componentes do Subversion
+
+Uma vez instalado, o Subversion consiste num conjunto de diversas partes. Uma breve visão geral sobre tudo o que você 
+dispõe é mostrada a seguir. Não se preocupe se as breves descrições acabarem fundindo a sua cuca—há muito mais páginas 
+neste livro para acabar com essa confusão.
+
+svn
+O programa cliente de linha de comando.
+
+svnversion
+Um programa para informar o estado (em termos das revisões dos itens presentes) da cópia de trabalho.
+
+svnlook
+Uma ferramenta para inspecionar um repositório Subversion diretamente.
+
+svnadmin
+Uma ferramenta para criação, ajuste e manutenção de um repositório Subversion.
+
+svndumpfilter
+Um programa para filtragem de fluxos de um repositório Subversion.
+
+mod_dav_svn
+Um módulo plugin para o servidor Apache HTTP, usado para disponibilizar seu repositório a outros através da rede.
+
+svnserve
+Um específico programa servidor independente, executável como um processo daemon ou invocável via SSH;
+uma outra forma de disponibilizar seu repositório a outros através da rede.
+
+svnsync
+Um programa para fazer espelhamento incremental de um repositório para outro através da rede.
+
+Uma vez que você tenha instalado o Subversion corretamente, você já deve estar pronto para iniciar.
+Os próximos dois capítulos vão guiá-lo pela uso do svn, o programa cliente de linha de comando do Subversion.
